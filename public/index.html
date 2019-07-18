@@ -28,6 +28,46 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+		<!-- Modal -->
+		<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+					<form action="#">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Name" />
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Email" />
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Phone" />
+						</div>
+						<div class="form-group">
+							<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Check in Date" />
+						</div>
+						<div class="form-group">
+							<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Check out date" />
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" />
+						</div>
+					</form>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
@@ -40,7 +80,7 @@
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	        	<!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li> -->
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Amenities</a></li>
+	        	<!-- <li class="nav-item"><a href="services.html" class="nav-link">Amenities</a></li> -->
 	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 	        	<!-- <li class="nav-item"><a href="room.html" class="nav-link">Rooms</a></li>
 	        	<li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li> -->
@@ -55,8 +95,8 @@
     	<div class="forth js-fullheight d-flex align-items-center">
     		<div class="text">
     			<h2>Welcome to The Pinnacle - Home Stay</h2>
-    			<h1 class="mb-5">A Perfect Place To Stay</h1>
-    			<!-- <p><a href="#" class="btn-custom py-3 pr-2">Make A Booking</a></p> -->
+    			<h1 class="mb-5">A Perfect Home Stay</h1>
+    			<!-- <p><a href="" class="btn-custom py-3 pr-2">Make A Booking</a></p> -->
     		</div>
     	</div>
     	<div class="third js-fullheight">
@@ -157,26 +197,26 @@
 		<section class="ftco-section ftco-services">
 			<div class="container">
 				<div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-reception-bell"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">25/7 Front Desk</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                
-              </div>
-            </div>      
-          </div>
+					<div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+						<div class="media block-6 services">
+							<div class="icon d-flex justify-content-center align-items-center mb-4">
+								<span class="flaticon-serving-dish"></span>
+							</div>
+							<div class="media-body">
+								<h3 class="heading">Free Wi-Fi</h3>
+								<p>Get access to free fast wifi that helps you stay connected all the time and focus on your work or just scroll through
+								social media.</p>			
+							</div>
+						</div>
+					</div>
           <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services">
               <div class="icon d-flex justify-content-center align-items-center mb-4">
             		<span class="flaticon-serving-dish"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Restaurant Bar</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Luxury Restaurant</h3>
+                <p>Dine in style in our lavish dining hall that makes your entire day’s stress go away.</p>
                
               </div>
             </div>    
@@ -187,8 +227,9 @@
             		<span class="flaticon-car"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Transfer Services</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Free Breakfast/Tea</h3>
+                <p>Start off your day with a grandeur complimentary breakfast. Tea/Coffee is always available in your room so that you can
+								enjoy a hot beverage anytime you like.</p>
                
               </div>
             </div>      
@@ -199,29 +240,28 @@
             		<span class="flaticon-spa"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Spa Suites</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-               
+                <h3 class="heading">Laundry Service</h3>
+                <p>Don’t get stuck with dirty clothes. Our laundry service ensures that you have a fresh pair to wear the next day.</p>
               </div>
             </div>      
-          </div>
+					</div>
         </div>
 			</div>
 		</section>
 
 		<section class="ftco-section ftco-room bg-light">
-			<div class="container">
+			<div class="container"> 
 				<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
           	<span class="subheading">Rooms</span>
             <h2 class="mb-4">Book A Room</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            <p>Booking a room should be an experience. Contact us to make your stay in Bhubaneswar an unforgettable affair.</p>
           </div>
         </div>
         <div class="carousel-rooms owl-carousel ftco-animate">
         	<div class="item">
         		<div class="room-wrap">
-        			<a href="#" class="img" style="background-image: url(images/r1.jpeg);"></a>
+        			<a href="" class="img" style="background-image: url(images/r1.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
         			<!-- <div class="text pt-4 pl-lg-5">
         				<h2><a href="room.html">Suite Room</a></h2>
         				<p class="rate">
@@ -235,122 +275,127 @@
         					<span>Starting From</span>
         					<span class="price">$100<small>/ night</small></span>
         				</p>
-        				<p><a href="#" class="btn-customize">Reserve A Room</a></p>
+        				<p><a href="" class="btn-customize">Reserve A Room</a></p>
         			</div> -->
         		</div>
         	</div>
         	<div class="item">
         		<div class="room-wrap">
-        			<a href="#" class="img" style="background-image: url(images/r2.jpeg);"></a>
+        			<a href="" class="img" style="background-image: url(images/r2.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
         		</div>
         	</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r3.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r3.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r4.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r4.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r5.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r5.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r6.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r6.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r7.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r7.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r8.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r8.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r9.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r9.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="room-wrap">
-						<a href="#" class="img" style="background-image: url(images/r10.jpeg);"></a>
+						<a href="" class="img" style="background-image: url(images/r10.jpeg);" data-toggle="modal" data-target="#form-modal"></a>
 					</div>
 				</div>
         </div>
 			</div>
 		</section>
 
-		<section class="ftco-section ftco-menu">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Discover</span>
-            <h2 class="mb-4">Near by Places</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-    		<div class="row d-md-flex">
-	    		<div class="col-lg-12 ftco-animate p-md-5">
-		    		<div class="row">
-		          <div class="col-md-12 nav-link-wrap mb-5">
-		            <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-		              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">1</a>
+<section class="ftco-section ftco-menu">
+	<div class="container">
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<span class="subheading">Discover</span>
+				<h2 class="mb-4">Near by Places</h2>
+				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+					texts.</p>
+			</div>
+		</div>
+		<div class="row d-md-flex">
+			<div class="col-lg-12 ftco-animate p-md-5">
+				<div class="row">
+					<div class="col-md-12 nav-link-wrap mb-5">
+						<div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist"
+							aria-orientation="vertical">
+							<a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+								aria-controls="v-pills-1" aria-selected="true">1</a>
 
-		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">2</a>
+							<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+								aria-controls="v-pills-2" aria-selected="false">2</a>
 
-		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">3</a>
-		            </div>
-		          </div>
-		          <div class="col-md-12 d-flex align-items-center">
-		            
-		            <div class="tab-content ftco-animate" id="v-pills-tabContent" style="width: 100%">
+							<a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+								aria-controls="v-pills-3" aria-selected="false">3</a>
+						</div>
+					</div>
+					<div class="col-md-12 d-flex align-items-center">
 
-		              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-		              	<div class="row">
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/airport.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Airport</a></h3>
-		              					<p class="price"><span>3.7 km / 9 minutes</span></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/secretariat.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Secretariat</a></h3>
-		              					<p class="price"><span>1 km / 5 minutes</span></p>
-		              				</div>
-		              			</div>
+						<div class="tab-content ftco-animate" id="v-pills-tabContent" style="width: 100%">
+
+							<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+								<div class="row">
+									<div class="col-md-4 text-center">
+										<div class="menu-wrap">
+											<a href="" class="menu-img img mb-4" style="background-image: url(images/governor.jpeg);"></a>
+											<div class="text">
+												<h3>
+													<a href="">OCAC</a>
+												</h3>
+												<p class="price">
+													<span>5.7 km / 12 minutes</span>
+												</p>
 											</div>
-											<div class="col-md-4 text-center">
-												<div class="menu-wrap">
-													<a href="#" class="menu-img img mb-4" style="background-image: url(images/temple.jpeg);"></a>
-													<div class="text">
-														<h3>
-															<a href="#">Lingraj Temple</a>
-														</h3>
-														<p class="price">
-															<span>6.5 km / 16 minutes</span>
-														</p>
-													</div>
-												</div>
+										</div>
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="menu-wrap">
+											<a href="" class="menu-img img mb-4" style="background-image: url(images/secretariat.jpg);"></a>
+											<div class="text">
+												<h3><a href="">Infocity</a></h3>
+												<p class="price"><span>11 km / 25 minutes</span></p>
 											</div>
-		              		<!-- <div class="col-md-4 text-center">
+										</div>
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="menu-wrap">
+											<a href="" class="menu-img img mb-4" style="background-image: url(images/secretariat.jpg);"></a>
+											<div class="text">
+												<h3><a href="">Secretariat</a></h3>
+												<p class="price"><span>1 km / 5 minutes</span></p>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dish-3.jpg);"></a>
+		              				<a href="" class="menu-img img mb-4" style="background-image: url(images/dish-3.jpg);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Lingraj Temple</a></h3>
+		              					<h3><a href="">Lingraj Temple</a></h3>
 		              					<p class="rate" style="display: hidden">
 						        					<span class="icon-star"></span>
 						        					<span class="icon-star"></span>
@@ -360,107 +405,103 @@
 						        				</p>
 		              					<p style="display: hidden">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
 		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn-customize">Add to cart</a></p>
+		              					<p><a href="" class="btn-customize">Add to cart</a></p>
 		              				</div>
 		              			</div>
 		              		</div> -->
-		              	</div>
-		              </div>
+								</div>
+							</div>
 
-		              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-		                <div class="row">
-											<div class="col-md-4 text-center">
-												<div class="menu-wrap">
-													<a href="#" class="menu-img img mb-4" style="background-image: url(images/station.jpeg);"></a>
-													<div class="text">
-														<h3>
-															<a href="#">Railway Station</a>
-														</h3>
-														<p class="price">
-															<span>3.7 km / 10 minutes</span>
-														</p>
-													</div>
-												</div>
+							<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+								<div class="row">
+									<div class="col-md-4 text-center">
+										<div class="menu-wrap">
+											<a href="" class="menu-img img mb-4" style="background-image: url(images/airport.jpg);"></a>
+											<div class="text">
+												<h3><a href="">Airport</a></h3>
+												<p class="price"><span>3.7 km / 9 minutes</span></p>
 											</div>
-											<div class="col-md-4 text-center">
-												<div class="menu-wrap">
-													<a href="#" class="menu-img img mb-4" style="background-image: url(images/governor.jpeg);"></a>
-													<div class="text">
-														<h3>
-															<a href="#">Governor House</a>
-														</h3>
-														<p class="price">
-															<span>1.4 km / 5 minutes</span>
-														</p>
-													</div>
-												</div>
+										</div>
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="menu-wrap">
+											<a href="" class="menu-img img mb-4" style="background-image: url(images/station.jpeg);"></a>
+											<div class="text">
+												<h3>
+													<a href="">Railway Station</a>
+												</h3>
+												<p class="price">
+													<span>3.7 km / 10 minutes</span>
+												</p>
 											</div>
-											<div class="col-md-4 text-center">
-												<div class="menu-wrap">
-													<a href="#" class="menu-img img mb-4" style="background-image: url(images/cave.jpeg);"></a>
-													<div class="text">
-														<h3>
-															<a href="#">Khandagiri</a>
-														</h3>
-														<p class="price">
-															<span>5.6 km / 14 minutes</span>
-														</p>
-													</div>
-												</div>
+										</div>
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="menu-wrap">
+											<a href="" class="menu-img img mb-4" style="background-image: url(images/bus.jpg);"></a>
+											<div class="text">
+												<h3>
+													<a href="">Bus Stand</a>
+												</h3>
+												<p class="price">
+													<span>3.9 km / 12 minutes</span>
+												</p>
 											</div>
-		              	</div>
-		              </div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-		              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-		                <div class="row">
-											<div class="col-md-4 text-center">
-												<div class="menu-wrap">
-													<a href="#" class="menu-img img mb-4" style="background-image: url(images/bus.jpg);"></a>
-													<div class="text">
-														<h3>
-															<a href="#">Bus Stand</a>
-														</h3>
-														<p class="price">
-															<span>3.9 km / 12 minutes</span>
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-4 text-center">
-												<div class="menu-wrap">
-													<a href="#" class="menu-img img mb-4" style="background-image: url(images/mus.jpg);"></a>
-													<div class="text">
-														<h3>
-															<a href="#">Odisha State Museum</a>
-														</h3>
-														<p class="price">
-															<span>4.1 km / 11 minutes</span>
-														</p>
-													</div>
-												</div>
-											</div>
+							<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+								<div class="row">
 										<div class="col-md-4 text-center">
 											<div class="menu-wrap">
-												<a href="#" class="menu-img img mb-4" style="background-image: url(images/dhauli.jpeg);"></a>
+												<a href="" class="menu-img img mb-4" style="background-image: url(images/cave.jpeg);"></a>
 												<div class="text">
 													<h3>
-														<a href="#">Dhauli Giri</a>
+														<a href="">Khandagiri</a>
 													</h3>
 													<p class="price">
-														<span>15.6 km / 31 minutes</span>
+														<span>5.6 km / 14 minutes</span>
 													</p>
 												</div>
 											</div>
 										</div>
-		              	</div>
-		              </div>
-		            </div>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
-    	</div>
-    </section>
+										<div class="col-md-4 text-center">
+											<div class="menu-wrap">
+												<a href="" class="menu-img img mb-4" style="background-image: url(images/temple.jpeg);"></a>
+												<div class="text">
+													<h3>
+														<a href="">Lingraj Temple</a>
+													</h3>
+													<p class="price">
+														<span>6.5 km / 16 minutes</span>
+													</p>
+												</div>
+											</div>
+										</div>
+									<div class="col-md-4 text-center">
+										<div class="menu-wrap">
+											<a href="" class="menu-img img mb-4" style="background-image: url(images/dhauli.jpeg);"></a>
+											<div class="text">
+												<h3>
+													<a href="">Dhauli Giri</a>
+												</h3>
+												<p class="price">
+													<span>15.6 km / 31 minutes</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
     	<div class="container">
@@ -470,15 +511,17 @@
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="50">0</strong>
-		                <span>Hotel Branches</span>
+										<strong class="number">6</strong>
+		                <!-- <strong class="number" data-number="50">0</strong> -->
+		                <span>Lavish Rooms</span>
 		              </div>
 		            </div>
 		          </div>
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="20000">0</strong>
+										<strong class="number">800+</strong>
+		                <!-- <strong class="number" data-number="20000">0</strong> -->
 		                <span>Happy Guests</span>
 		              </div>
 		            </div>
@@ -486,16 +529,18 @@
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
-		                <span>Rooms</span>
+										<strong class="number">4.5</strong>
+		                <!-- <strong class="number" data-number="100">0</strong> -->
+		                <span>Rated on Google</span>
 		              </div>
 		            </div>
 		          </div>
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
-		                <span>Destinations</span>
+										<strong class="number">24x7</strong>
+		                <!-- <strong class="number" data-number="100">0</strong> -->
+		                <span>Support</span>
 		              </div>
 		            </div>
 		          </div>
@@ -516,18 +561,29 @@
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section pt-md-5 pl-md-5 mb-5">
 	          	<div class="ml-md-0">
-		          	<span class="subheading">Welcome to islaGrande Hotel</span>
-		            <h2 class="mb-4">Watch Our Video</h2>
+		          	<span class="subheading">Welcome to the Pinnacle Home Stay</span>
+		            <h2 class="mb-4">About Us</h2>
 	            </div>
 	          </div>
 	          <div class="pb-md-5">
-							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-							<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+							<p>We are a luxury homestay located in the heart of the city.</p>
+							<p>Being just 9 minutes away from the Airport and 10 minutes from the Railway station, Pinnacle Homestay is the perfect
+							place for you to stay in Bhubaneswar.</p>
+							<p>When you book with us, you don't just book a room, you book an experience. Our rooms are fully furnished with cozy beds,
+							lights that help you work while being relaxed and television that keeps you entertained non-stop. Our staff are
+							available 24x7 at your service and help you with all your needs. Your comfort and convenience is our priority! Amenities
+							such as free Wi-Fi and conference rooms helps to work easily on the move while our luxury dining restaurant offers a
+							lavish menu to keep you pampered. Transfer services eliminates the hassle of arranging a cab and worrying about your
+							safety as our highly professional drivers make your travel a pleasant experience</p>
+							<p>Located near offices such as OCAC, Odisha Secretariat, Governor's House, Infocity and other major offices helps you save
+							time travelling for work. Being just 14 minutes from the Khandagiri caves and 16 minutes from the famous Lingaraj Temple
+							makes it a perfect place for travellers who want to experience the best of Bhubaneswar.</p>
+							<p>Call us today to book a home away from home!</p>
 							<ul class="ftco-social d-flex">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-google-plus"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
               </ul>
 						</div>
 					</div>
@@ -535,7 +591,60 @@
 			</div>
 		</section>
 
-    <section class="ftco-section testimony-section">
+			<section class="ftco-section ftco-services">
+				<div class="container">
+						<div class="row justify-content-center mb-5">
+							<div class="col-md-7 heading-section text-center ftco-animate">
+								<h2 class="mb-4">Additional Amenities</h2>
+								<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+									texts.</p> -->
+							</div>
+						</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate">
+							<div class="media block-6 services">
+								<div class="icon d-flex justify-content-center align-items-center mb-4">
+									<span class="flaticon-reception-bell"></span>
+								</div>
+								<div class="media-body">
+									<h3 class="heading">Parking</h3>
+									<p>We understand that when you rent a vehicle, parking it becomes a hassle. We provide you with parking facility where you
+									can be assured of it’s safety and enjoy a peaceful stay.</p>
+			
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate">
+							<div class="media block-6 services">
+								<div class="icon d-flex justify-content-center align-items-center mb-4">
+									<span class="flaticon-serving-dish"></span>
+								</div>
+								<div class="media-body">
+									<h3 class="heading">Customisable Full-time Kitchen</h3>
+									<p>For our guests who stay for a long period, we understand that you like to cook once in a while for fun. We help you
+									setup a fully customisable kitchen to make you feel at home.</p>
+			
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate">
+							<div class="media block-6 services">
+								<div class="icon d-flex justify-content-center align-items-center mb-4">
+									<span class="flaticon-serving-dish"></span>
+								</div>
+								<div class="media-body">
+									<h3 class="heading">Transfer Services</h3>
+									<p>Forget the hassle of booking a cab and worrying about your safety. We provide neat and clean cabs with highly
+									professional drives to make your travel relaxing.</p>
+			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+    <!-- <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -656,7 +765,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
 		<!-- <section class="ftco-section bg-light">
@@ -675,12 +784,12 @@
               </a>
               <div class="text py-4">
                 <div class="meta mb-3">
-                  <div><a href="#">Oct. 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <div><a href="">Oct. 12, 2018</a></div>
+                  <div><a href="">Admin</a></div>
+                  <div><a href="" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
                 <div class="desc">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+	                <h3 class="heading"><a href="">Even the all-powerful Pointing has no control about the blind texts</a></h3>
 	              </div>
               </div>
             </div>
@@ -691,12 +800,12 @@
               </a>
               <div class="text py-4">
                 <div class="meta mb-3">
-                  <div><a href="#">Oct. 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <div><a href="">Oct. 12, 2018</a></div>
+                  <div><a href="">Admin</a></div>
+                  <div><a href="" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
                 <div class="desc">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+	                <h3 class="heading"><a href="">Even the all-powerful Pointing has no control about the blind texts</a></h3>
 	              </div>
               </div>
             </div>
@@ -707,12 +816,12 @@
               </a>
               <div class="text py-4">
                 <div class="meta mb-3">
-                  <div><a href="#">Oct. 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <div><a href="">Oct. 12, 2018</a></div>
+                  <div><a href="">Admin</a></div>
+                  <div><a href="" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
                 <div class="desc">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+	                <h3 class="heading"><a href="">Even the all-powerful Pointing has no control about the blind texts</a></h3>
 	              </div>
               </div>
             </div>
@@ -729,9 +838,9 @@
               <h2 class="ftco-heading-2">About islaGrande</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -739,12 +848,12 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Company</h2>
               <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">Amenities</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Rooms</a></li>
+                <li><a href="">Amenities</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -752,11 +861,11 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-                <li><a href="#">Spa</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">Restaurants</a></li>
-                <li><a href="#">Gym</a></li>
-                <li><a href="#">Promotion</a></li>
+                <li><a href="">Spa</a></li>
+                <li><a href="">Rooms</a></li>
+                <li><a href="">Restaurants</a></li>
+                <li><a href="">Gym</a></li>
+                <li><a href="">Promotion</a></li>
               </ul>
             </div>
           </div>
@@ -766,8 +875,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><a href=""><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href=""><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
