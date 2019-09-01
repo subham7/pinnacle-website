@@ -40,27 +40,28 @@
 						</button>
 					</div>
 					<div class="modal-body">
-					<form action="#">
+					<form method="POST"
+              action="https://formspree.io/nandinienterprises2k18@gmail.com">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name" />
+							<input name="name" type="text" class="form-control" placeholder="Your Name" />
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Your Email" />
+							<input name="email" type="email" class="form-control" placeholder="Your Email" />
 						</div>
 						<div class="form-group">
-							<input type="number" class="form-control" placeholder="Your Phone" />
+							<input name="phone" type="number" class="form-control" placeholder="Your Phone" />
 						</div>
 							<div class="form-group">
-								<input type="number" class="form-control" placeholder="Number of People" />
+								<input name="no.of people" type="number" class="form-control" placeholder="Number of People" />
 							</div>
 								<div class="form-group">
-									<input type="number" class="form-control" placeholder="Number of Rooms" />
+									<input type="number" name="no. of rooms" class="form-control" placeholder="Number of Rooms" />
 								</div>
 						<div class="form-group">
-							<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Check in Date" />
+							<input type="text" name="check in" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Check in Date" />
 						</div>
 						<div class="form-group">
-							<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Check out date" />
+							<input type="text" name="check out" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Check out date" />
 						</div>
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" />
@@ -100,25 +101,26 @@
 								<li><p>Free parking and wifi</p></li>
 								<li><p>Timely tea coffee supplements</p></li>
 							</ul>
-							<form action="#">
+							<form method="POST"
+              action="https://formspree.io/nandinienterprises2k18@gmail.com">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name" />
+									<input name="name" type="text" class="form-control" placeholder="Your Name" />
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Email" />
+									<input type="text" name="email" class="form-control" placeholder="Your Email" />
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Phone" />
+									<input type="text" name="phone" class="form-control" placeholder="Your Phone" />
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Name of Organization" />
+									<input type="text" name="Organization" class="form-control" placeholder="Name of Organization" />
 								</div>
 								<div class="form-group">
-									<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control"
+									<input type="text" name="check in" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control"
 										placeholder="Check in Date" />
 								</div>
 								<div class="form-group">
-									<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control"
+									<input type="text" name="check out" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control"
 										placeholder="Check out date" />
 								</div>
 								<div class="form-group">
@@ -136,7 +138,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">The Pinnacle</a>
+	      <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="The Pinnacle"> </a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -264,8 +266,9 @@
 				<div class="row">
 					<div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
 						<div class="media block-6 services">
-							<div class="icon d-flex justify-content-center align-items-center mb-4">
-								<span class="flaticon-serving-dish"></span>
+							<div class="cicon d-flex justify-content-center align-items-center mb-4">
+								<!-- <span class="flaticon-serving-dish"></span> -->
+								<img src="images/icons/wifi.png" alt="">
 							</div>
 							<div class="media-body">
 								<h3 class="heading">Free Wi-Fi</h3>
@@ -276,8 +279,8 @@
 					</div>
           <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-serving-dish"></span>
+              <div class="cicon d-flex justify-content-center align-items-center mb-4">
+            	<img src="images/icons/dining.png" alt="">
               </div>
               <div class="media-body">
                 <h3 class="heading">Luxury Dining</h3>
@@ -288,8 +291,8 @@
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-car"></span>
+              <div class="cicon d-flex justify-content-center align-items-center mb-4">
+            	<img src="images/icons//buffet.png" alt="">
               </div>
               <div class="media-body">
                 <h3 class="heading">Breakfast Buffet</h3>
@@ -301,8 +304,8 @@
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-spa"></span>
+              <div class="cicon d-flex justify-content-center align-items-center mb-4">
+            		<img src="images/icons/laundry.png" alt="">
               </div>
               <div class="media-body">
                 <h3 class="heading">Laundry Service</h3>
@@ -670,8 +673,8 @@
 					<div class="row">
 						<div class="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate">
 							<div class="media block-6 services">
-								<div class="icon d-flex justify-content-center align-items-center mb-4">
-									<span class="flaticon-reception-bell"></span>
+								<div class="cicon d-flex justify-content-center align-items-center mb-4">
+								<img src="images/icons/parking.png" alt="">
 								</div>
 								<div class="media-body">
 									<h3 class="heading">Parking</h3>
@@ -683,8 +686,8 @@
 						</div>
 						<div class="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate">
 							<div class="media block-6 services">
-								<div class="icon d-flex justify-content-center align-items-center mb-4">
-									<span class="flaticon-serving-dish"></span>
+								<div class="cicon d-flex justify-content-center align-items-center mb-4">
+									<img src="images/icons/kitchen.png" alt="">
 								</div>
 								<div class="media-body">
 									<h3 class="heading">Customisable Full-time Kitchen</h3>
@@ -696,8 +699,8 @@
 						</div>
 						<div class="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate">
 							<div class="media block-6 services">
-								<div class="icon d-flex justify-content-center align-items-center mb-4">
-									<span class="flaticon-serving-dish"></span>
+								<div class="cicon d-flex justify-content-center align-items-center mb-4">
+								<img src="images/icons/transfer.png" alt="">
 								</div>
 								<div class="media-body">
 									<h3 class="heading">Transfer Services</h3>

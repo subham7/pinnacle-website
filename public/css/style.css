@@ -8991,16 +8991,25 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 
-    .contact-bg {
-      height: 60vh;
-      background-image: url('images/bg_3.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+.contact-bg {
+  height: 60vh;
+  background-image: url('images/bg_3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-    .contact-text {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+.contact-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cicon img {
+  height: 100px;
+  width: auto;
+}
+ .navbar-brand img {
+   height: 60px;
+   width:auto;
+ }
